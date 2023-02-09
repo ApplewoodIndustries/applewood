@@ -64,6 +64,7 @@ export default function Home() {
             className={styles.card}
             target="_blank"
             rel="noopener noreferrer"
+            tabIndex={0}
           >
             <h2 className={inter.className}>
               Clients <span>-&gt;</span>

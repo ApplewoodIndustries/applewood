@@ -127,18 +127,23 @@
 
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
-  .card:hover {
+
+  .card:hover,
+  .card:focus {
     background: rgba(var(--card-rgb), 0.25);
     border: 1px solid rgba(var(--outline-color), 0.15);
   }
 
-  .card:hover span {
+  .card:hover span,
+  .card:focus span {
     transform: translateX(4px);
   }
 }
 
 @media (prefers-reduced-motion) {
-  .card:hover span {
+
+  .card:hover span,
+  .card:focus span {
     transform: none;
   }
 }
