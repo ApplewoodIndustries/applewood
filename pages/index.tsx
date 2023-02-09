@@ -16,20 +16,20 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
         <div className={styles.center}>
-          <img
-            className={styles.logo}
-            src="/applewood.svg"
-            alt="Applewood Industries Logo"
-          />
+          <picture>
+            <source srcSet="/applewood_dark.svg" media="(prefers-color-scheme: light)" />
+            <img
+              className={styles.logo}
+              src="/applewood.svg"
+              alt="Applewood Industries Logo"
+            />
+          </picture>
           <div className={styles.companyName}>
-          <h3 className={inter.className}>
-            Applewood Industries
+            <h3 className={inter.className}>
+              Applewood Industries
             </h3>
           </div>
         </div>
-
-        
-
         <div className={styles.grid}>
           <a
             href="#"
@@ -55,7 +55,7 @@ export default function Home() {
               Services <span>-&gt;</span>
             </h2>
             <p className={inter.className}>
-              Discover the services Applewood Industries can bring your business 
+              Discover the services Applewood Industries can bring your business
             </p>
           </a>
 
