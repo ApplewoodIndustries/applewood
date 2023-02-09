@@ -18,16 +18,17 @@ export default function Home() {
         <div className={styles.center}>
           <img
             className={styles.logo}
-            src="/logo.png"
+            src="/applewood.svg"
             alt="Applewood Industries Logo"
           />
-        </div>
-
-        <div className={styles.description}>
+          <div className={styles.companyName}>
           <h3 className={inter.className}>
-            Our industry center is focused on new ways to ideate the consumer space through strategic deployments of solutions
+            Applewood Industries
             </h3>
           </div>
+        </div>
+
+        
 
         <div className={styles.grid}>
           <a
